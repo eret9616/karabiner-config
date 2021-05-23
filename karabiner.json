@@ -1041,25 +1041,6 @@
                         ]
                     },
                     {
-                        "description": "8 to command+w",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "8"
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "w",
-                                        "modifiers": [
-                                            "command"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "1 to command+1",
                         "manipulators": [
                             {
