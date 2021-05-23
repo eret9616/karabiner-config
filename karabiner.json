@@ -779,7 +779,7 @@
                                             "left_option"
                                         ]
                                     }
-                                },
+                                },           
                                 "to": [
                                     {
                                         "shell_command": "open -a 'Visual Studio Code.app'"
@@ -809,6 +809,17 @@
                                         "shell_command": "~/.config/karabiner/click.sh"
                                     }
                                 ],
+                                "to_if_held_down": [
+                                    {
+                                        "key_code":"h",
+                                        "modifiers": [
+                                            "command"
+                                        ]
+                                    }
+                                ],
+                                "parameters": {
+                                    "basic.to_if_held_down_threshold_milliseconds": 1300
+                                },
                                 "type": "basic"
                             }
                         ]
@@ -864,7 +875,8 @@
                                     }
                                 },
                                 "parameters": {
-                                    "basic.to_delayed_action_delay_milliseconds": 400
+                                    "basic.to_delayed_action_delay_milliseconds": 400,
+                                    "basic.to_if_held_down_threshold_milliseconds": 600
                                 },
                                 "to": [
                                     {
@@ -877,12 +889,6 @@
                                         "set_variable": {
                                             "name": "backslashx2",
                                             "value": 1
-                                        }
-                                    },
-                                    {
-                                        "set_variable": {
-                                            "name": "openedsearch",
-                                            "value": 5
                                         }
                                     }
                                 ],
@@ -904,6 +910,17 @@
                                         }
                                     ]
                                 },
+                                "to_if_held_down": [
+                                    {
+                                        "key_code": "escape"
+                                    },
+                                    {
+                                        "key_code":"h",
+                                        "modifiers": [
+                                            "command"
+                                        ]
+                                    }
+                                ],
                                 "type": "basic"
                             },
                             {
@@ -913,11 +930,6 @@
                                             "^Kem$"
                                         ],
                                         "type": "frontmost_application_if"
-                                    },
-                                    {
-                                        "name": "openedsearch",
-                                        "type": "variable_if",
-                                        "value": 5
                                     }
                                 ],
                                 "from": {
@@ -993,7 +1005,7 @@
                     {
                         "description": "Change command+0 to 0",
                         "manipulators": [
-                            {
+                            {   
                                 "from": {
                                     "key_code": "0",
                                     "modifiers": {
@@ -1300,38 +1312,6 @@
                                 "to": [
                                     {
                                         "key_code": "backslash"
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "command + w to command+h （in）  Kim.app",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "^Kem$"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "w",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "command"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "h",
-                                        "modifiers": [
-                                            "command"
-                                        ]
                                     }
                                 ],
                                 "type": "basic"
