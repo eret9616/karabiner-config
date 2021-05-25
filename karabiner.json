@@ -438,18 +438,16 @@
                         "manipulators": [
                             {
                                 "from": {
-                                    "key_code": "fn",
-                                    "modifiers": {
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
+                                    "key_code": "fn"
                                 },
                                 "to": [
                                     {
                                         "key_code": "fn"
                                     }
                                 ],
+                                "parameters": {
+                                    "basic.to_if_alone_timeout_milliseconds": 500
+                                },
                                 "to_if_alone": [
                                     {
                                         "pointing_button": "button1"
