@@ -816,7 +816,7 @@
                                     }
                                 ],
                                 "parameters": {
-                                    "basic.to_if_held_down_threshold_milliseconds": 1300
+                                    "basic.to_if_held_down_threshold_milliseconds": 1800
                                 },
                                 "type": "basic"
                             }
