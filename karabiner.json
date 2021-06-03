@@ -16,6 +16,30 @@
                 },
                 "rules": [
                     {
+                        "description":"Map capslock+del to option+del",
+                        "manipulators":[
+                            {
+                                "from": {
+                                    "key_code": "delete_or_backspace",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "shift"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "delete_or_backspace",
+                                        "modifiers": [
+                                            "option"
+                                        ]
+                                    }
+                                ],       
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "Map Chrome Devtools debug shortcuts",
                         "manipulators": [
                             {
