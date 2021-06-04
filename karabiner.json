@@ -16,6 +16,36 @@
                 },
                 "rules": [
                     {
+                        "description":"Map capslock+w to command+2(switch to last page) then command+w",
+                        "manipulators":[
+                            {
+                                "from": {
+                                    "key_code": "w",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "shift"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "2",
+                                        "modifiers": [
+                                            "command"
+                                        ]
+                                    },
+                                    {
+                                        "key_code": "w",
+                                        "modifiers": [
+                                            "command"
+                                        ]
+                                    }
+                                ],       
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description":"Map capslock+del to option+del",
                         "manipulators":[
                             {
