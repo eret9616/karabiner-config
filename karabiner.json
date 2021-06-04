@@ -16,6 +16,16 @@
                 },
                 "rules": [
                     {
+                        "description":"double pointing_event to set a variable,and reset this variable after timer",
+                        "manipulators":[
+                            {
+                                "from":{
+
+                                }
+                            }
+                        ]
+                    },
+                    {
                         "description":"Map capslock+w to command+2(switch to last page) then command+w",
                         "manipulators":[
                             {
@@ -46,14 +56,110 @@
                         ]
                     },
                     {
-                        "description":"Map capslock+del to option+del",
+                        "description":"Map capslock(right_shift)+down to option+down",
+                        "manipulators":[
+                            {
+                                "from": {
+                                    "key_code": "down_arrow",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_shift"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "down_arrow",
+                                        "modifiers": [
+                                            "option"
+                                        ]
+                                    }
+                                ],       
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description":"Map capslock(right_shift)+up to option+up",
+                        "manipulators":[
+                            {
+                                "from": {
+                                    "key_code": "up_arrow",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_shift"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "up_arrow",
+                                        "modifiers": [
+                                            "option"
+                                        ]
+                                    }
+                                ],       
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description":"Map capslock(right_shift)+right to option+right",
+                        "manipulators":[
+                            {
+                                "from": {
+                                    "key_code": "right_arrow",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_shift"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "right_arrow",
+                                        "modifiers": [
+                                            "option"
+                                        ]
+                                    }
+                                ],       
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description":"Map capslock(right_shift)+left to option+left",
+                        "manipulators":[
+                            {
+                                "from": {
+                                    "key_code": "left_arrow",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_shift"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "left_arrow",
+                                        "modifiers": [
+                                            "option"
+                                        ]
+                                    }
+                                ],       
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description":"Map capslock(right_shift)+del to option+del",
                         "manipulators":[
                             {
                                 "from": {
                                     "key_code": "delete_or_backspace",
                                     "modifiers": {
                                         "mandatory": [
-                                            "shift"
+                                            "right_shift"
                                         ]
                                     }
                                 },
