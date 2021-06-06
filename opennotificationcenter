@@ -4,11 +4,7 @@
                             {
                                 "from": {
                                     "key_code": "left_option"
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "left_option"
-                                    }
+x                                    }
                                 ],
                                 "to_if_alone": [
                                     {
