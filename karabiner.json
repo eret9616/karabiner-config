@@ -80,7 +80,7 @@
                         ]
                     },
                     {
-                        "description":"Map capslock+w to command+2(switch to last page) then command+w",
+                        "description":"Map capslock+w to click then command+w",
                         "manipulators":[
                             {
                                 "from": {
@@ -93,10 +93,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "2",
-                                        "modifiers": [
-                                            "command"
-                                        ]
+                                        "pointing_event": "button1"
                                     },
                                     {
                                         "key_code": "w",
