@@ -16,7 +16,7 @@
                 },
                 "rules": [
                     {
-                        "description":"double x to command w in chrome",
+                        "description":"double x to command w",
                         "manipulators": [
                             {
                                 "conditions": [
@@ -103,6 +103,36 @@
                                     }
                                 ],       
                                 "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description":"capslock(right_shift)+c to command+a then command + c",
+                        "manipulators":[
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "c",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_shift"
+                                        ]
+                                    }
+                                },
+                                "to":[
+                                    {
+                                        "key_code": "a",
+                                        "modifiers": [
+                                            "command"
+                                        ]
+                                    },
+                                    {
+                                        "key_code": "c",
+                                        "modifiers": [
+                                            "command"
+                                        ]
+                                    }
+                                ]
                             }
                         ]
                     },
