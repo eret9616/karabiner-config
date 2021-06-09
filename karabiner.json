@@ -16,6 +16,49 @@
                 },
                 "rules": [
                     {
+                        "description": "shift + capslock( capslock + shift ) to option + capslock",
+                        "manipulators":[
+                            {
+                                "type": "basic",
+                                "from":{
+                                    "key_code":"caps_lock",
+                                    "modifiers":{
+                                        "mandatory":[
+                                            "left_shift"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "left_shift",
+                                        "modifiers": [
+                                            "option"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from":{
+                                    "key_code":"left_shift",
+                                    "modifiers":{
+                                        "mandatory":[
+                                            "right_shift"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "left_shift",
+                                        "modifiers": [
+                                            "option"
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
                         "description":"double x to command w",
                         "manipulators": [
                             {
