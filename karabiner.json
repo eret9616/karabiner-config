@@ -16,6 +16,95 @@
                 },
                 "rules": [
                     {
+                        "description": "right_command+ a to cursor left",
+                        "manipulators": [
+                          {
+                            "type": "basic",
+                            "from": {
+                              "key_code": "a",
+                              "modifiers": {
+                                "mandatory": [
+                                  "right_command"
+                                ],
+                                "optional": [
+                                  "any"
+                                ]
+                              }
+                            },
+                            "to": [
+                              {
+                                "mouse_key": {
+                                  "x": -1800
+                                }
+                              }
+                            ]
+                          },
+                        {
+                                "type": "basic",
+                                "from": {
+                                  "key_code": "w",
+                                  "modifiers": {
+                                    "mandatory": [
+                                      "right_command"
+                                    ],
+                                    "optional": [
+                                      "any"
+                                    ]
+                                  }
+                                },
+                                "to": [
+                                  {
+                                    "mouse_key": {
+                                      "y": -1800
+                                    }
+                                  }
+                                ]
+                        },
+                        {
+                            "type": "basic",
+                            "from": {
+                              "key_code": "d",
+                              "modifiers": {
+                                "mandatory": [
+                                  "right_command"
+                                ],
+                                "optional": [
+                                  "any"
+                                ]
+                              }
+                            },
+                            "to": [
+                              {
+                                "mouse_key": {
+                                  "x": 1800
+                                }
+                              }
+                            ]
+                        },
+                        {
+                            "type": "basic",
+                            "from": {
+                              "key_code": "s",
+                              "modifiers": {
+                                "mandatory": [
+                                  "right_command"
+                                ],
+                                "optional": [
+                                  "any"
+                                ]
+                              }
+                            },
+                            "to": [
+                              {
+                                "mouse_key": {
+                                  "y": 1800
+                                }
+                              }
+                            ]
+                        }
+                    ]
+                    },
+                    {
                         "description": "shift + capslock( capslock + shift ) to option + capslock",
                         "manipulators":[
                             {
