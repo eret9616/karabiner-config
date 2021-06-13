@@ -2464,13 +2464,9 @@
                     },
                    "to": [
                         {
-                            "key_code": "a",
-                            "modifiers": [
-                                "left_command"
-                            ]
+                            "key_code": "f1"
                         }
-                    ],
-                    "type": "basic"
+                    ]
                 },
                 {
                     "from": {
@@ -2479,6 +2475,16 @@
                     "to": [
                         {
                             "key_code": "f2"
+                        }
+                    ]
+                },
+                {
+                    "from": {
+                        "key_code": "f3"
+                    },
+                    "to": [
+                        {
+                            "key_code": "f3"
                         }
                     ]
                 },
