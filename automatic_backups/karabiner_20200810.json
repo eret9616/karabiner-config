@@ -107,7 +107,22 @@
                                         "key_code": "f19"
                                     }
                                 ],
-                                "type": "basic"
+                                "type": "basic",
+                                "parameters": {
+                                    "basic.to_delayed_action_delay_milliseconds": 4000
+                                },
+                                "to_delayed_action": {
+                                    "to_if_canceled": [
+                                        {
+                                            "key_code":"a"
+                                        }   
+                                    ],
+                                    "to_if_invoked": [
+                                        {
+                                            "key_code":"a"
+                                        }
+                                    ]
+                                }
                             },
                             {
                                 "conditions": [
