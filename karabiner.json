@@ -16,6 +16,73 @@
                 },
                 "rules": [
                     {
+                        "description":"map f1 to command + 1",
+                        "manipulators":[
+                            {
+                                "type": "basic",
+                                "from":{
+                                    "key_code":"f1"
+                                },
+                                "to":[
+                                    {
+                                        "key_code":"1",
+                                        "modifiers":"command"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "description":"map f2 to command + 2",
+                        "manipulators":[
+                            {
+                                "type": "basic",
+                                "from":{
+                                    "key_code":"f2"
+                                },
+                                "to":[
+                                    {
+                                        "key_code":"2",
+                                        "modifiers":"command"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "description":"map f3 to command + 3",
+                        "manipulators":[
+                            {
+                                "type": "basic",
+                                "from":{
+                                    "key_code":"f3"
+                                },
+                                "to":[
+                                    {
+                                        "key_code":"3",
+                                        "modifiers":"command"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "description":"map f4 to escape",
+                        "manipulators":[
+                            {
+                                "type": "basic",
+                                "from":{
+                                    "key_code":"f4"
+                                },
+                                "to":[
+                                    {
+                                        "key_code":"escape"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
                         "description": "right_command+ tab to right-click(mouse button 2)",
                         "manipulators": [
                             {
@@ -2391,66 +2458,6 @@
                 }
             ],
             "fn_function_keys": [
-                {
-                    "from": {
-                        "key_code": "f1"
-                    },
-                    "to": [
-                        {
-                            "key_code": "f1"
-                        }
-                    ]
-                },
-                {
-                    "from": {
-                        "key_code": "f2"
-                    },
-                    "to": [
-                        {
-                            "key_code": "f2"
-                        }
-                    ]
-                },
-                {
-                    "from": {
-                        "key_code": "f3"
-                    },
-                    "to": [
-                        {
-                            "key_code": "f3"
-                        }
-                    ]
-                },
-                {
-                    "from": {
-                        "key_code": "f4"
-                    },
-                    "to": [
-                        {
-                            "apple_vendor_keyboard_key_code": "spotlight"
-                        }
-                    ]
-                },
-                {
-                    "from": {
-                        "key_code": "f5"
-                    },
-                    "to": [
-                        {
-                            "consumer_key_code": "dictation"
-                        }
-                    ]
-                },
-                {
-                    "from": {
-                        "key_code": "f6"
-                    },
-                    "to": [
-                        {
-                            "key_code": "f6"
-                        }
-                    ]
-                },
                 {
                     "from": {
                         "key_code": "f7"
