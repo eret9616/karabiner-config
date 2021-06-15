@@ -1043,30 +1043,6 @@
                         ]
                     },
                     {
-                        "description": "lcontrol alone to acrtiveHint in vimac (f17",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "left_control"
-                                },
-                                "parameters": {
-                                    "basic.to_if_alone_timeout_milliseconds": 300
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "left_control"
-                                    }
-                                ],
-                                "to_if_alone": [
-                                    {
-                                        "key_code": "f17"
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "command+semicolon to semicolon",
                         "manipulators": [
                             {
