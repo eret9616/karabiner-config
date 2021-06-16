@@ -1,6 +1,6 @@
 {
+    "check_for_updates_on_startup": true,
     "global": {
-        "check_for_updates_on_startup": true,
         "show_in_menu_bar": true,
         "show_profile_name_in_menu_bar": false
     },
@@ -15,6 +15,82 @@
                     "mouse_motion_to_scroll.speed": 100
                 },
                 "rules": [
+                    {
+                        "description":"map right_command + h to left",
+                        "manipulators":[
+                            {
+                                "type": "basic",
+                                "from":{
+                                    "key_code":"h",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_command"
+                                        ]
+                                    }
+                                },
+                                "to":{
+                                    "key_code":"left_arrow"
+                                }            
+                            }
+                        ]
+                    },
+                    {
+                        "description":"map right_command + j to down",
+                        "manipulators":[
+                            {
+                                "type": "basic",
+                                "from":{
+                                    "key_code":"j",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_command"
+                                        ]
+                                    }
+                                },
+                                "to":{
+                                    "key_code":"down_arrow"
+                                }            
+                            }
+                        ]
+                    },
+                    {
+                        "description":"map right_command + k to up",
+                        "manipulators":[
+                            {
+                                "type": "basic",
+                                "from":{
+                                    "key_code":"k",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_command"
+                                        ]
+                                    }
+                                },
+                                "to":{
+                                    "key_code":"up_arrow"
+                                }            
+                            }
+                        ]
+                    },
+                    {
+                        "description":"map right_command + l to right",
+                        "manipulators":[
+                            {
+                                "type": "basic",
+                                "from":{
+                                    "key_code":"l",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_command"
+                                        ]
+                                    }
+                                },
+                                "to":{
+                                    "key_code":"right_arrow"
+                                }            
+                            }
+                        ]
+                    },
                     {
                         "description":"map f1 to command + 1",
                         "manipulators":[
