@@ -2,7 +2,7 @@
     "title": "Rcommand to copy & Roption to paste",
     "rules": [
       {
-        "description": "map l_command+eject to scroll up",
+        "description": "map l_command+eject to scroll up",th
         "manipulators": [
           {
             "type": "basic",
