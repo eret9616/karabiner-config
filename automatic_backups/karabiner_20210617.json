@@ -1,7 +1,6 @@
 {
     "check_for_updates_on_startup": true,
     "global": {
-        "check_for_updates_on_startup": true,
         "show_in_menu_bar": true,
         "show_profile_name_in_menu_bar": false
     },
@@ -17,33 +16,10 @@
                 },
                 "rules": [
                     {
-                        "description":"right_command + left_command to command+click",
+                        "description":"map capslock(right_shift) + a to click then select all",
                         "manipulators":[
                             {
-                                "type": "basic",
-                                "from":{
-                                    "key_code": "left_command",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "right_command"
-                                        ]
-                                    }
-                                },
-                                "to":[
-                                    {
-                                        "pointing_button": "button1",
-                                        "modifiers": [
-                                            "command"
-                                        ]
-                                    }
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "description": "map capslock(right_shift) + a to click then select all",
-                        "manipulators": [
-                            {
+                                "type":"basic",
                                 "from": {
                                     "key_code": "a",
                                     "modifiers": {
@@ -65,136 +41,135 @@
                                             "command"
                                         ]
                                     }
-                                ],
-                                "type": "basic"
+                                ]
                             }
                         ]
                     },
                     {
-                        "description": "map right_command + hjkl to left up down right",
-                        "manipulators": [
+                        "description":"map right_command + hjkl to left up down right",
+                        "manipulators":[
                             {
-                                "from": {
-                                    "key_code": "h",
+                                "type": "basic",
+                                "from":{
+                                    "key_code":"h",
                                     "modifiers": {
                                         "mandatory": [
                                             "right_command"
                                         ]
                                     }
                                 },
-                                "to": {
-                                    "key_code": "left_arrow"
-                                },
-                                "type": "basic"
+                                "to":{
+                                    "key_code":"left_arrow"
+                                }            
                             },
                             {
-                                "from": {
-                                    "key_code": "j",
+                                "type": "basic",
+                                "from":{
+                                    "key_code":"j",
                                     "modifiers": {
                                         "mandatory": [
                                             "right_command"
                                         ]
                                     }
                                 },
-                                "to": {
-                                    "key_code": "down_arrow"
-                                },
-                                "type": "basic"
+                                "to":{
+                                    "key_code":"down_arrow"
+                                }            
                             },
                             {
-                                "from": {
-                                    "key_code": "k",
+                                "type": "basic",
+                                "from":{
+                                    "key_code":"k",
                                     "modifiers": {
                                         "mandatory": [
                                             "right_command"
                                         ]
                                     }
                                 },
-                                "to": {
-                                    "key_code": "up_arrow"
-                                },
-                                "type": "basic"
+                                "to":{
+                                    "key_code":"up_arrow"
+                                }            
                             },
                             {
-                                "from": {
-                                    "key_code": "l",
+                                "type": "basic",
+                                "from":{
+                                    "key_code":"l",
                                     "modifiers": {
                                         "mandatory": [
                                             "right_command"
                                         ]
                                     }
                                 },
-                                "to": {
-                                    "key_code": "right_arrow"
-                                },
-                                "type": "basic"
+                                "to":{
+                                    "key_code":"right_arrow"
+                                }            
                             }
                         ]
                     },
                     {
-                        "description": "map f1 to command + 1",
-                        "manipulators": [
+                        "description":"map f1 to command + 1",
+                        "manipulators":[
                             {
-                                "from": {
-                                    "key_code": "f1"
+                                "type": "basic",
+                                "from":{
+                                    "key_code":"f1"
                                 },
-                                "to": [
+                                "to":[
                                     {
-                                        "key_code": "1",
-                                        "modifiers": "command"
+                                        "key_code":"1",
+                                        "modifiers":"command"
                                     }
-                                ],
-                                "type": "basic"
+                                ]
                             }
                         ]
                     },
                     {
-                        "description": "map f2 to command + 2",
-                        "manipulators": [
+                        "description":"map f2 to command + 2",
+                        "manipulators":[
                             {
-                                "from": {
-                                    "key_code": "f2"
+                                "type": "basic",
+                                "from":{
+                                    "key_code":"f2"
                                 },
-                                "to": [
+                                "to":[
                                     {
-                                        "key_code": "2",
-                                        "modifiers": "command"
+                                        "key_code":"2",
+                                        "modifiers":"command"
                                     }
-                                ],
-                                "type": "basic"
+                                ]
                             }
                         ]
                     },
                     {
-                        "description": "map f3 to command + 3",
-                        "manipulators": [
+                        "description":"map f3 to command + 3",
+                        "manipulators":[
                             {
-                                "from": {
-                                    "key_code": "f3"
+                                "type": "basic",
+                                "from":{
+                                    "key_code":"f3"
                                 },
-                                "to": [
+                                "to":[
                                     {
-                                        "key_code": "3",
-                                        "modifiers": "command"
+                                        "key_code":"3",
+                                        "modifiers":"command"
                                     }
-                                ],
-                                "type": "basic"
+                                ]
                             }
                         ]
                     },
                     {
-                        "description": "map f4 to escape",
-                        "manipulators": [
+                        "description":"map f4 to escape",
+                        "manipulators":[
                             {
-                                "from": {
-                                    "key_code": "f4"
+                                "type": "basic",
+                                "from":{
+                                    "key_code":"f4"
                                 },
-                                "to": [
+                                "to":[
                                     {
-                                        "key_code": "escape"
+                                        "key_code":"escape"
                                     }
-                                ],
-                                "type": "basic"
+                                ]
                             }
                         ]
                     },
@@ -2492,7 +2467,7 @@
                         "product_id": 34304,
                         "vendor_id": 1452
                     },
-                    "ignore": false,
+                    "ignore": true,
                     "manipulate_caps_lock_led": true,
                     "simple_modifications": []
                 },
@@ -2574,66 +2549,6 @@
                 }
             ],
             "fn_function_keys": [
-                {
-                    "from": {
-                        "key_code": "f1"
-                    },
-                    "to": [
-                        {
-                            "consumer_key_code": "display_brightness_decrement"
-                        }
-                    ]
-                },
-                {
-                    "from": {
-                        "key_code": "f2"
-                    },
-                    "to": [
-                        {
-                            "consumer_key_code": "display_brightness_increment"
-                        }
-                    ]
-                },
-                {
-                    "from": {
-                        "key_code": "f3"
-                    },
-                    "to": [
-                        {
-                            "apple_vendor_keyboard_key_code": "mission_control"
-                        }
-                    ]
-                },
-                {
-                    "from": {
-                        "key_code": "f4"
-                    },
-                    "to": [
-                        {
-                            "apple_vendor_keyboard_key_code": "spotlight"
-                        }
-                    ]
-                },
-                {
-                    "from": {
-                        "key_code": "f5"
-                    },
-                    "to": [
-                        {
-                            "consumer_key_code": "dictation"
-                        }
-                    ]
-                },
-                {
-                    "from": {
-                        "key_code": "f6"
-                    },
-                    "to": [
-                        {
-                            "key_code": "f6"
-                        }
-                    ]
-                },
                 {
                     "from": {
                         "key_code": "f7"
