@@ -57,9 +57,6 @@
                                         "pointing_button": "button1"
                                     },
                                     {
-                                        "pointing_button": "button1"
-                                    },
-                                    {
                                         "key_code": "a",
                                         "modifiers": [
                                             "command"
@@ -590,7 +587,7 @@
                         ]
                     },
                     {
-                        "description": "capslock(right_shift)+c to command+a then command + c",
+                        "description": "capslock(right_shift)+c to click then command+a then command + c",
                         "manipulators": [
                             {
                                 "from": {
@@ -602,6 +599,9 @@
                                     }
                                 },
                                 "to": [
+                                    {
+                                        "pointing_button": "button1"
+                                    },
                                     {
                                         "key_code": "a",
                                         "modifiers": [
