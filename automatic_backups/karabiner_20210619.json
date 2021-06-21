@@ -17,10 +17,11 @@
                 },
                 "rules": [
                     {
-                        "description": "right_command + left_command to command+click",
-                        "manipulators": [
+                        "description":"right_command + left_command to command+click",
+                        "manipulators":[
                             {
-                                "from": {
+                                "type": "basic",
+                                "from":{
                                     "key_code": "left_command",
                                     "modifiers": {
                                         "mandatory": [
@@ -28,15 +29,14 @@
                                         ]
                                     }
                                 },
-                                "to": [
+                                "to":[
                                     {
+                                        "pointing_button": "button1",
                                         "modifiers": [
                                             "command"
-                                        ],
-                                        "pointing_button": "button1"
+                                        ]
                                     }
-                                ],
-                                "type": "basic"
+                                ]
                             }
                         ]
                     },
@@ -282,19 +282,15 @@
                                 "from": {
                                     "key_code": "left_shift",
                                     "modifiers": {
-                                        "optional": [
-                                            "right_command"
-                                        ]
+                                        "optional": ["any"]
                                     }
                                 },
                                 "to": [
                                     {
-                                        "modifiers": [
-                                            "left_shift"
-                                        ],
                                         "mouse_key": {
-                                            "speed_multiplier": 0.23
-                                        }
+                                            "speed_multiplier": 0.236666667
+                                        },
+                                        "modifiers": ["left_shift"]
                                     }
                                 ],
                                 "type": "basic"
@@ -1886,10 +1882,7 @@
                         "manipulators": [
                             {
                                 "from": {
-                                    "key_code": "grave_accent_and_tilde",
-                                    "modifiers":{
-                                        "optional": ["any"]
-                                    }
+                                    "key_code": "grave_accent_and_tilde"
                                 },
                                 "to": [
                                     {
