@@ -1886,10 +1886,7 @@
                         "manipulators": [
                             {
                                 "from": {
-                                    "key_code": "grave_accent_and_tilde",
-                                    "modifiers":{
-                                        "optional": ["any"]
-                                    }
+                                    "key_code": "grave_accent_and_tilde"
                                 },
                                 "to": [
                                     {
