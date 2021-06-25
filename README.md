@@ -1,3 +1,3 @@
 *TODO* 
 
-This guide will...
+guide
