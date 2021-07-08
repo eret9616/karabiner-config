@@ -1406,7 +1406,7 @@
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "~/.config/karabiner/click.sh"
+                                        "shell_command": "~/.config/karabiner/etc/click.sh"
                                     }
                                 ],
                                 "to_if_held_down": [
