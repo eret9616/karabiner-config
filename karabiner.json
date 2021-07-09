@@ -321,6 +321,11 @@
                                         }
                                     }
                                 ],
+                                "to_if_alone": [
+                                    {
+                                        "key_code": "f19"
+                                    }
+                                ],
                                 "type": "basic"
                             },
                             {
@@ -1155,27 +1160,6 @@
                                         "modifiers": [
                                             "control"
                                         ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "lShift to f19",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "left_shift"
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "left_shift"
-                                    }
-                                ],
-                                "to_if_alone": [
-                                    {
-                                        "key_code": "f19"
                                     }
                                 ],
                                 "type": "basic"
