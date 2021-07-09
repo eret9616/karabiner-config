@@ -17,8 +17,8 @@
                 },
                 "rules": [
                     {
-                        "description":"r_command+h to hide(command+h)",
-                        "manipulators":[
+                        "description": "r_command+h to hide(command+h)",
+                        "manipulators": [
                             {
                                 "from": {
                                     "key_code": "h",
@@ -43,7 +43,7 @@
                     {
                         "description": "right_command + left_command to command+click",
                         "manipulators": [
-                            {               
+                            {
                                 "from": {
                                     "key_code": "left_command",
                                     "modifiers": {
@@ -2463,11 +2463,21 @@
                     "simple_modifications": [
                         {
                             "from": {
-                                "key_code": "right_control"
+                                "key_code": "home"
                             },
                             "to": [
                                 {
                                     "apple_vendor_top_case_key_code": "keyboard_fn"
+                                }
+                            ]
+                        },
+                        {
+                            "from": {
+                                "key_code": "right_control"
+                            },
+                            "to": [
+                                {
+                                    "key_code": "caps_lock"
                                 }
                             ]
                         }
@@ -2601,7 +2611,28 @@
                 "delay_milliseconds_before_open_device": 1000
             },
             "selected": true,
-            "simple_modifications": [],
+            "simple_modifications": [
+                {
+                    "from": {
+                        "apple_vendor_top_case_key_code": "keyboard_fn"
+                    },
+                    "to": [
+                        {
+                            "key_code": "caps_lock"
+                        }
+                    ]
+                },
+                {
+                    "from": {
+                        "key_code": "delete_forward"
+                    },
+                    "to": [
+                        {
+                            "consumer_key_code": "eject"
+                        }
+                    ]
+                }
+            ],
             "virtual_hid_keyboard": {
                 "country_code": 0,
                 "indicate_sticky_modifier_keys_state": true,
