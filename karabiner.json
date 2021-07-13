@@ -325,6 +325,27 @@
                             },
                             {
                                 "from": {
+                                    "key_code": "caps_lock",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_command"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "modifiers": [
+                                            "caps_lock"
+                                        ],
+                                        "mouse_key": {
+                                            "speed_multiplier": 3
+                                        }
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
                                     "key_code": "a",
                                     "modifiers": {
                                         "mandatory": [
